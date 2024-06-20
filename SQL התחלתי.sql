@@ -1,0 +1,62 @@
+CREATE TABLE Vehicle
+(
+  VehicleID INT NOT NULL,
+  BusNumber INT NOT NULL,
+  VehicleModel VARCHAR(50) NOT NULL,
+  ManufactureYear INT NOT NULL,
+  PRIMARY KEY (VehicleID)
+);
+
+CREATE TABLE Mechanic
+(
+  MechanicID INT NOT NULL,
+  MechanicName VARCHAR(100) NOT NULL,
+  Specialization VARCHAR(50) NOT NULL,
+  PRIMARY KEY (MechanicID)
+);
+
+CREATE TABLE Part
+(
+  PartId INT NOT NULL,
+  PartName VARCHAR(100) NOT NULL,
+  PartDescription CHAR NOT NULL,
+  PartPrice NUMERIC(10 2) NOT NULL,
+  PRIMARY KEY (PartId)
+);
+
+CREATE TABLE Maintenance
+(
+  MaintenanceId INT NOT NULL,
+  VeicleId INT NOT NULL,
+  MaintenanceDate DATE NOT NULL,
+  MechanicId INT NOT NULL,
+  MaintenanceType VARCHAR(50) NOT NULL,
+  NewAttribute INT NOT NULL,
+  VehicleID INT NOT NULL,
+  PRIMARY KEY (MaintenanceId),
+  FOREIGN KEY (VehicleID) REFERENCES Vehicle(VehicleID),
+  FOREIGN KEY (MechanicID) REFERENCES Mechanic(MechanicID)
+);
+
+CREATE TABLE Repair
+(
+  RepairID INT NOT NULL,
+  RepairDescription CHAR NOT NULL,
+  RepairDate DATE NOT NULL,
+  VehicleID INT NOT NULL,
+  MechanicID INT NOT NULL,
+  PRIMARY KEY (RepairID),
+  FOREIGN KEY (VehicleID) REFERENCES Vehicle(VehicleID),
+  FOREIGN KEY (MechanicID) REFERENCES Mechanic(MechanicID)
+);
+
+CREATE TABLE PartInRepair
+(
+  PartInRepairId INT NOT NULL,
+  RepairID INT NOT NULL,
+  PartId INT NOT NULL,
+  Quantity INT NOT NULL,
+  PRIMARY KEY (PartInRepairId),
+  FOREIGN KEY (RepairID) REFERENCES Repair(RepairID),
+  FOREIGN KEY (PartId) REFERENCES Part(PartId)
+);

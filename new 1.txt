@@ -1,0 +1,80 @@
+LIST(
+Gasoline Engine Repair ,
+General Electrical Systems ,
+Advanced Electrical Systems (Electronic Controls),
+Supplemental Restraint Systems (SRS) ,
+Electrical Installation ,
+General Installation , 
+Repair and Painting (Including assembly work) ,
+Maintenance Control )
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1000, 'Engine Maintenance');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1001, 'Installation Systems (Vehicle Installation) ');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1002, 'Maintenance Planning');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1003, 'Heating and Air Conditioning S');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1004, 'Engine Management Systems (EMS)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1005, 'Advanced Electronics(ECU)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1006, 'Lighting and Signaling Systems');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1007, 'Diesel Engine Repair');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1008, 'Braking Systems(ABS)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1009, 'Maintenance Control');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1010, 'Advanced Electronics(ECU)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1011, 'General Electrical Systems');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1012, 'Body Repair');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1013, 'Traction Control Systems (ASR)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1014, 'Lighting and Signaling Systems');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1015, 'Diesel Engine Repair');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1016, 'Traction Control Systems (ASR)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1017, 'General Electrical Systems');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1018, 'Braking Systems(ESP)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1019, 'Communication Systems (Radio-Bluetooth-GPS systems)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1020, 'Advanced Electronics(CAN-BUS)');
+
+insert into C##BOSS.SPECIALIZATION (ID, SP_NAME)
+values (1021, 'Gasoline Engine Repair ,');
+
+commit;
+
+
+

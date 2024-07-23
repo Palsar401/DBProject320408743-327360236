@@ -1,0 +1,14 @@
+ALTER TABLE Repair
+MODIFY (RepairDescription NOT NULL);
+
+ALTER TABLE Vehicle
+ADD CONSTRAINT chk_manufactureyear CHECK (MANUFACTUREYEAR BETWEEN 1990 AND 2024);
+
+
+
+
+
+ALTER TABLE Part
+MODIFY (PartName DEFAULT 'Unknown');
+
+
